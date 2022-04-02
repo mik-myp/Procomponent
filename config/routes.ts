@@ -970,6 +970,57 @@
           },
         ],
       },
+      {
+        path: 'editableprotable',
+        name: '可编辑表格',
+        routes: [
+          {
+            path: 'EditableTable',
+            name: '可编辑表格',
+            component: './datashow/editableprotable/EditableTable',
+          },
+          {
+            path: 'CooperateWithFormItem',
+            name: '与 FormItem 配合',
+            component: './datashow/editableprotable/CooperateWithFormItem',
+          },
+          {
+            path: 'LinksWithContentOutsideTheEditTable',
+            name: '与编辑表格外的内容联动',
+            component: './datashow/editableprotable/LinksWithContentOutsideTheEditTable',
+          },
+          {
+            path: 'TableWithSubcolumnsIncreases',
+            name: '有子列的表格增加',
+            component: './datashow/editableprotable/TableWithSubcolumnsIncreases',
+          },
+          {
+            path: 'CustomEditableTable',
+            name: '自定义可编辑表格',
+            component: './datashow/editableprotable/CustomEditableTable',
+          },
+          {
+            path: 'RealTime',
+            name: '实时保存的编辑表格',
+            component: './datashow/editableprotable/RealTime',
+          },
+        ],
+      },
+      {
+        path: 'dragsorttable',
+        name: '拖动排序表格',
+        routes: [],
+      },
+      {
+        path: 'prolist',
+        name: '高级列表',
+        routes: [],
+      },
+      {
+        path: 'prodescriptions',
+        name: '高级定义列表',
+        routes: [],
+      },
     ],
   },
   {
