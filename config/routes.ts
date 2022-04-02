@@ -1009,17 +1009,159 @@
       {
         path: 'dragsorttable',
         name: '拖动排序表格',
-        routes: [],
+        routes: [
+          {
+            path: 'DragAndDropTheSorting',
+            name: '拖拽排序',
+            component: './datashow/dragsorttable/DragAndDropTheSorting',
+          },
+          {
+            path: 'DragAndDropSortToEditTheTable',
+            name: '拖拽排序编辑表格',
+            component: './datashow/dragsorttable/DragAndDropSortToEditTheTable',
+          },
+        ],
       },
       {
         path: 'prolist',
         name: '高级列表',
-        routes: [],
+        routes: [
+          {
+            path: 'BasicUse',
+            name: '基本使用',
+            component: './datashow/prolist/BasicUse',
+          },
+          {
+            path: 'EditList',
+            name: '编辑列表',
+            component: './datashow/prolist/EditList',
+          },
+          {
+            path: 'Supporting',
+            name: '支持展开的列表',
+            component: './datashow/prolist/Supporting',
+          },
+          {
+            path: 'SupportSelected',
+            name: '支持选中的列表',
+            component: './datashow/prolist/SupportSelected',
+          },
+          {
+            path: 'QueryList',
+            name: '查询列表',
+            component: './datashow/prolist/QueryList',
+          },
+          {
+            path: 'FilteringAndAsynchronousRequests',
+            name: '带筛选和异步请求的列表',
+            component: './datashow/prolist/FilteringAndAsynchronousRequests',
+          },
+          {
+            path: 'SizeAndDividingLine',
+            name: '大小和分割线',
+            component: './datashow/prolist/SizeAndDividingLine',
+          },
+          {
+            path: 'TheLandscapeStyle',
+            name: '竖排样式',
+            component: './datashow/prolist/TheLandscapeStyle',
+          },
+          {
+            path: 'SomePresetModes',
+            name: '一些预设的模式',
+            component: './datashow/prolist/SomePresetModes',
+          },
+          {
+            path: 'TurnPage',
+            name: '翻页',
+            component: './datashow/prolist/TurnPage',
+          },
+          {
+            path: 'CardList',
+            name: '卡片列表',
+            component: './datashow/prolist/CardList',
+          },
+        ],
       },
       {
         path: 'prodescriptions',
         name: '高级定义列表',
-        routes: [],
+        routes: [
+          {
+            path: 'BasicUse',
+            name: '基本使用',
+            component: './datashow/prodescriptions/BasicUse',
+          },
+          {
+            path: 'ArrayTypeDataIndex',
+            name: '数组类型 dataIndex',
+            component: './datashow/prodescriptions/ArrayTypeDataIndex',
+          },
+          {
+            path: 'FormattingConfiguration',
+            name: '格式化配置',
+            component: './datashow/prodescriptions/FormattingConfiguration',
+          },
+          {
+            path: 'RemoteRequestData',
+            name: '远程请求数据',
+            component: './datashow/prodescriptions/RemoteRequestData',
+          },
+          {
+            path: 'ColumnsConfiguration',
+            name: 'columns 配置',
+            component: './datashow/prodescriptions/ColumnsConfiguration',
+          },
+          {
+            path: 'DataSourceConfigurationData',
+            name: 'dataSource 配置数据',
+            component: './datashow/prodescriptions/DataSourceConfigurationData',
+          },
+          {
+            path: 'EditableList',
+            name: '可编辑的定义列表',
+            component: './datashow/prodescriptions/EditableList',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    path: '/general',
+    name: '通用',
+    icon: 'crown',
+    routes: [
+      {
+        path: 'proskeleton',
+        name: '骨架屏',
+        routes: [
+          {
+            path: 'List',
+            name: 'List',
+            component: './general/proskeleton/List',
+          },
+          {
+            path: 'Result',
+            name: '结果页',
+            component: './general/proskeleton/Result',
+          },
+          {
+            path: 'Descriptions',
+            name: '详情页',
+            component: './general/proskeleton/Descriptions',
+          },
+        ],
+      },
+      {
+        path: 'profield',
+        name: '原子组件',
+        routes: [
+          {
+            path: 'DEMO',
+            name: 'DEMO',
+            component: './general/profield/DEMO',
+          },
+        ],
       },
     ],
   },
