@@ -560,11 +560,415 @@
             icon: 'smile',
             component: './dataentry/proform/LabelAndFormItemLayout',
           },
+          {
+            path: 'Login',
+            name: '登录',
+            icon: 'smile',
+            component: './dataentry/proform/Login',
+          },
+          {
+            path: 'FormLinkage',
+            name: '表单联动',
+            icon: 'smile',
+            component: './dataentry/proform/FormLinkage',
+          },
+          {
+            path: 'FormMethodCall',
+            name: '表单方法调用',
+            icon: 'smile',
+            component: './dataentry/proform/FormMethodCall',
+          },
+          {
+            path: 'SynchronizeSubmissionResultsURL',
+            name: '同步提交结果到 url',
+            icon: 'smile',
+            component: './dataentry/proform/SynchronizeSubmissionResultsURL',
+          },
+          {
+            path: 'Money',
+            name: '金额',
+            icon: 'smile',
+            component: './dataentry/proform/Money',
+          },
+          {
+            path: 'FixedFooter',
+            name: '固定页脚',
+            icon: 'smile',
+            component: './dataentry/proform/FixedFooter',
+          },
+          {
+            path: 'ProFormAndEditableTable',
+            name: 'ProForm 和 EditableTable 同时使用',
+            icon: 'smile',
+            component: './dataentry/proform/ProFormAndEditableTable',
+          },
         ],
       },
-
+      {
+        path: 'proformfields',
+        name: '表单项',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'FormItem',
+            name: '表单项',
+            component: './dataentry/proformfields/FormItem',
+          },
+          {
+            path: 'QueryForm',
+            name: '查询表单',
+            component: './dataentry/proformfields/QueryForm',
+          },
+          {
+            path: 'StructuredData',
+            name: '结构化数据',
+            component: './dataentry/proformfields/StructuredData',
+          },
+          {
+            path: 'DateForm',
+            name: '日期表单',
+            component: './dataentry/proformfields/DateForm',
+          },
+          {
+            path: 'UploadForm',
+            name: '上传表单',
+            component: './dataentry/proformfields/UploadForm',
+          },
+        ],
+      },
+      {
+        path: 'proformlist',
+        name: '数据结构化',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'LinkageForm',
+            name: '联动的 FormList',
+            component: './dataentry/proformlist/LinkageForm',
+          },
+          {
+            path: 'AdjustableButton',
+            name: '可调整的新建按钮位置',
+            component: './dataentry/proformlist/AdjustableButton',
+          },
+          {
+            path: 'FormsAreNestedWithEachOther',
+            name: '表单互相嵌套',
+            component: './dataentry/proformlist/FormsAreNestedWithEachOther',
+          },
+          {
+            path: 'ComplexLinkage',
+            name: '复杂联动',
+            component: './dataentry/proformlist/ComplexLinkage',
+          },
+          {
+            path: 'BehaviorGuards',
+            name: '行为守卫',
+            component: './dataentry/proformlist/BehaviorGuards',
+          },
+          {
+            path: 'RestrictionsOnAddingAndDeletingEntries',
+            name: '增删条目限制',
+            component: './dataentry/proformlist/RestrictionsOnAddingAndDeletingEntries',
+          },
+        ],
+      },
+      {
+        path: 'proformdependency',
+        name: '数据联动',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'InterdependentForm',
+            name: '互相依赖表单',
+            component: './dataentry/proformdependency/InterdependentForm',
+          },
+          {
+            path: 'GetFormDependentValues',
+            name: '获取表单依赖值',
+            component: './dataentry/proformdependency/GetFormDependentValues',
+          },
+        ],
+      },
+      {
+        path: 'schemaform',
+        name: 'JSON 表单',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'JSONToGenerateTheForm',
+            name: 'JSON 来生成表单',
+            component: './dataentry/schemaform/JSONToGenerateTheForm',
+          },
+          {
+            path: 'JSONGenerateStepForm',
+            name: 'JSON 来生成分步表单',
+            component: './dataentry/schemaform/JSONGenerateStepForm',
+          },
+          {
+            path: 'EmbeddedProForm',
+            name: '嵌入到 ProForm 中',
+            component: './dataentry/schemaform/EmbeddedProForm',
+          },
+          {
+            path: 'UsingProFormDependency',
+            name: '使用 ProFormDependency',
+            component: './dataentry/schemaform/UsingProFormDependency',
+          },
+          {
+            path: 'CombineShouldUpdateFalseAndDependencies',
+            name: '结合 shouldUpdate=false 和 dependencies 触发更新',
+            component: './dataentry/schemaform/CombineShouldUpdateFalseAndDependencies',
+          },
+          {
+            path: 'DynamicControlOfWhetherToRerender',
+            name: '动态控制是否重渲染',
+            component: './dataentry/schemaform/DynamicControlOfWhetherToRerender',
+          },
+        ],
+      },
+      {
+        path: 'queryfilterandlightfilter',
+        name: '筛选表单',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'QueryFilter',
+            name: '查询筛选',
+            component: './dataentry/queryfilterandlightfilter/QueryFilter',
+          },
+          {
+            path: 'QueryFilterFoldedByDefault',
+            name: '查询筛选-默认收起',
+            component: './dataentry/queryfilterandlightfilter/QueryFilterFoldedByDefault',
+          },
+          {
+            path: 'QueryFilteringVerticalLayout',
+            name: '查询筛选-垂直布局',
+            component: './dataentry/queryfilterandlightfilter/QueryFilteringVerticalLayout',
+          },
+          {
+            path: 'QueryFilterSearch',
+            name: '查询筛选-搜索',
+            component: './dataentry/queryfilterandlightfilter/QueryFilterSearch',
+          },
+          {
+            path: 'LightweightScreening',
+            name: '轻量筛选',
+            component: './dataentry/queryfilterandlightfilter/LightweightScreening',
+          },
+          {
+            path: 'LightweightFilterCustomFooter',
+            name: '轻量筛选-自定义 footer',
+            component: './dataentry/queryfilterandlightfilter/LightweightFilterCustomFooter',
+          },
+          {
+            path: 'LightweightFilterBorderMode',
+            name: '轻量筛选-边框模式',
+            component: './dataentry/queryfilterandlightfilter/LightweightFilterBorderMode',
+          },
+          {
+            path: 'LightFilterFoldMode',
+            name: '轻量筛选-折叠模式',
+            component: './dataentry/queryfilterandlightfilter/LightFilterFoldMode',
+          },
+        ],
+      },
+      {
+        path: 'stepsform',
+        name: '分步表单',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'StepByStepForm',
+            name: '分步表单',
+            component: './dataentry/stepsform/StepByStepForm',
+          },
+          {
+            path: 'StepFormVerticalMode',
+            name: '分步表单垂直模式',
+            component: './dataentry/stepsform/StepFormVerticalMode',
+          },
+          {
+            path: 'CustomStepFormButtons',
+            name: '自定义分步表单按钮',
+            component: './dataentry/stepsform/CustomStepFormButtons',
+          },
+          {
+            path: 'StepByStepFormMultipleCards',
+            name: '分步表单-多卡片',
+            component: './dataentry/stepsform/StepByStepFormMultipleCards',
+          },
+          {
+            path: 'StepFormUsedWithModal',
+            name: '分步表单-与 Modal 配合使用',
+            component: './dataentry/stepsform/StepFormUsedWithModal',
+          },
+          {
+            path: 'EditStepForm',
+            name: '编辑场景下的分步表单',
+            component: './dataentry/stepsform/EditStepForm',
+          },
+        ],
+      },
+      {
+        path: 'modalanddrawer',
+        name: '数据联动',
+        icon: 'smile',
+        routes: [
+          {
+            path: 'ModalForm',
+            name: 'Modal 表单',
+            component: './dataentry/modalanddrawer/ModalForm',
+          },
+          {
+            path: 'DrawerForm',
+            name: 'Drawer  表单',
+            component: './dataentry/modalanddrawer/DrawerForm',
+          },
+          {
+            path: 'ModalInModal',
+            name: '嵌套浮层表单',
+            component: './dataentry/modalanddrawer/ModalInModal',
+          },
+          {
+            path: 'CustomModalFormButtons',
+            name: '自定义 Modal 表单按钮',
+            component: './dataentry/modalanddrawer/CustomModalFormButtons',
+          },
+          {
+            path: 'UseVisibleAndOnVisibleChange',
+            name: '使用 visible 和 onVisibleChange',
+            component: './dataentry/modalanddrawer/UseVisibleAndOnVisibleChange',
+          },
+          {
+            path: 'ResetTheForm',
+            name: '重置表单',
+            component: './dataentry/modalanddrawer/ResetTheForm',
+          },
+        ],
+      },
       {
         component: './404',
+      },
+    ],
+  },
+  {
+    path: '/datashow',
+    name: '数据展示',
+    icon: 'crown',
+    routes: [
+      {
+        path: 'protable',
+        name: '高级表格',
+        routes: [
+          {
+            path: 'QueryForm',
+            name: '查询表格',
+            component: './datashow/protable/QueryForm',
+          },
+          {
+            path: 'QueryFormNoButton',
+            name: '查询（无按钮）表格',
+            component: './datashow/protable/QueryFormNoButton',
+          },
+          {
+            path: 'NoQueryForm',
+            name: '无查询表单',
+            component: './datashow/protable/NoQueryForm',
+          },
+          {
+            path: 'ReplaceQueryFormsWithLightweightFilters',
+            name: '轻量筛选替换查询表单',
+            component: './datashow/protable/ReplaceQueryFormsWithLightweightFilters',
+          },
+          {
+            path: 'TableWithoutToolbars',
+            name: '无 ToolBar 的表格',
+            component: './datashow/protable/TableWithoutToolbars',
+          },
+          {
+            path: 'MandatoryQueryForm',
+            name: '必填的查询表单',
+            component: './datashow/protable/MandatoryQueryForm',
+          },
+          {
+            path: 'NestedTables',
+            name: '嵌套表格',
+            component: './datashow/protable/NestedTables',
+          },
+          {
+            path: 'AboutStructure',
+            name: '左右结构',
+            component: './datashow/protable/AboutStructure',
+          },
+          {
+            path: 'TableBatchOperation',
+            name: '表格批量操作',
+            component: './datashow/protable/TableBatchOperation',
+          },
+          {
+            path: 'ThroughFormRef',
+            name: '通过 formRef 来操作查询表单',
+            component: './datashow/protable/ThroughFormRef',
+          },
+          {
+            path: 'RTL',
+            name: 'RTL',
+            component: './datashow/protable/RTL',
+          },
+          {
+            path: 'ControlledTableSettingsBar',
+            name: '受控的表格设置栏',
+            component: './datashow/protable/ControlledTableSettingsBar',
+          },
+          {
+            path: 'FormThePolling',
+            name: '表格轮询',
+            component: './datashow/protable/FormThePolling',
+          },
+          {
+            path: 'DateFormatter',
+            name: 'dateFormatter - 日期格式化',
+            component: './datashow/protable/DateFormatter',
+          },
+          {
+            path: 'SearchFormCustom',
+            name: '搜索表单自定义',
+            component: './datashow/protable/SearchFormCustom',
+          },
+          {
+            path: 'FormActionCustomization',
+            name: '表单操作自定义',
+            component: './datashow/protable/FormActionCustomization',
+          },
+          {
+            path: 'ToolbarCustomization',
+            name: 'Toolbar 自定义',
+            component: './datashow/protable/ToolbarCustomization',
+          },
+          {
+            path: 'TableBodyCustom',
+            name: '表格主体自定义',
+            component: './datashow/protable/TableBodyCustom',
+          },
+          {
+            path: 'CardForm',
+            name: '卡片表格',
+            component: './datashow/protable/CardForm',
+          },
+          {
+            path: 'BringTheirOwnKeyWords',
+            name: '使用自带 keyWords 搜索的 table',
+            component: './datashow/protable/BringTheirOwnKeyWords',
+          },
+
+          {
+            path: 'CustomErrorBoundaries',
+            name: '自定义错误边界',
+            component: './datashow/protable/CustomErrorBoundaries',
+          },
+        ],
       },
     ],
   },
